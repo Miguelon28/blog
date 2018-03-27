@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nueva Pubicacion</title>
+</head>
+<body>
+	<form action="insertarpu.php" method="POST">
+	<tr>
+		<th>Titulo:</th>
+		<th><input type="text" name="titulo"></th>
+	</tr>
+	<br><br>
+	<tr>
+		<th>Descripcion:</th>
+		<th><INPUT id=texto style="width:228px; height:98px" size=32 name=texto> </th>
+	</tr>
+	<br><br>
+	<tr>
+		<th><input type="submit" value="Aceptar"></th>
+		<th><a href="inicio.html?id=<?php echo $fila['id_usuario'];?>">Regresar</a></th>
+	</tr>
+	</form>
+</body>
+</html>
