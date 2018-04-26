@@ -63,31 +63,15 @@
      <th><input type="password" placeholder="Contraseña" name="password" id="password"required/></th>
    </tr>
 
+
   </table
 </form>
-   <br>
-   <input type="button" value="Ingresar" onclick="validar(this.form)" />
-   <br><br>
-   <a href="registrar.php">Registrar</a>
-   <br><br>
-    <table border="1">
-      <?php
-           include('../BD/conectar.php');
-           function tabla($tabla,$conexion){
-            $query = $conexion->prepare("select * from $tabla");
-            $query->execute();
-            return $query;
-           }
-           $pubs=tabla("publicaciones",$pdo);
-           foreach ($pubs as $pub ) {
-             echo $pub['titulo'];
-             echo "<br><br>";
-             echo $pub['cuerpo'];
-             echo "<br><br>";
-           }
-        ?>
-        </tr>
-      </table>
+<br><br>
+ <input type="submit" value="Aceptar">
+<a href="registrar.php">Registrar</a>
+<br>
+<a href="index.php">Regresar</a>
+
 
 </body>
 </html>

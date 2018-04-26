@@ -10,5 +10,5 @@ $cuerpo = $_POST['cuerpo'];
 
 $sql->execute();  
 
-header('Location: publicacion.html');
+header('Location: index.php');
 ?>
